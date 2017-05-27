@@ -1,17 +1,11 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: chingalo
- * Date: 10/30/16
- * Time: 10:05 AM
- */
 class Passenger_model extends CI_Model
 {
 
     function add($data)
     {
-        $result = array('message' => "", 'status' => 0, 'user_id' => "");
+        $result = array('message' => "", 'user_id' => "");
         if ($this->getUserByUserNameAndEmail($data) === 0) {
             $this->db->insert('users', $data);
             $user = $this->getUser($data);

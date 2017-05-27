@@ -1,11 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-/**
- * Created by PhpStorm.
- * User: chingalo
- * Date: 10/30/16
- * Time: 10:01 AM
- */
+
 class Passsenger extends CI_Controller
 {
     function __construct(){
@@ -28,7 +23,6 @@ class Passsenger extends CI_Controller
         );
         $result = $this->Passenger_model->getUser($data);
         echo json_encode($result);
-
     }*/
 
     function register(){
@@ -52,10 +46,10 @@ class Passsenger extends CI_Controller
             'plname'=>$plname,
             //'password'=>md5($password),
             'pphone'=>$pphone,
-            'altphone'=>$altphone,
+            'paltphone'=>$paltphone,
             'pemail'=>$pemail,
             'pphysical_address'=>$pphysical_address,
-            'status' =>""
+            //'status' =>""
         );
         $result = $this->Passenger_model->add($data);
         echo json_encode($result);

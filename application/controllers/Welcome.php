@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-/*
+
 if (isset($_SERVER['HTTP_ORIGIN'])) {
 	header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
 	header('Access-Control-Allow-Credentials: true');
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 
 	exit(0);
 }
-*/
+
 
 class Welcome extends CI_Controller {
 
@@ -47,10 +47,7 @@ class Welcome extends CI_Controller {
 	}
 	public function index()
 	{
-		$data = array(
-			'username'=>"chambua",
-
-		);
+		$data = array('username'=>"chambua");
 		$x = ["1","2","3"];
 		$output = "";
 		for ($index = 0; $index < sizeof($x); $index++) {

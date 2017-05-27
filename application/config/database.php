@@ -81,8 +81,8 @@ $db['default'] = array(
 	'password' => 'roby,100',
 	'database' => 'taximobile',
 =======
-	'password' => 'chingalo',
-	'database' => 'uin',
+	//'password' => 'chingalo',
+	//'database' => 'uin',
 >>>>>>> 3e396c62a3be2a4fb3130b2e11c3fccd99d6edf9
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

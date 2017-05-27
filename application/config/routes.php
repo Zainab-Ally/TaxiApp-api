@@ -52,23 +52,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 
 //for categories
-$route['get-categories'] = 'category/getALlCategories';
+//$route['get-categories'] = 'category/getALlCategories';
 
 //routes for category entities
-$route['save-category-entity'] = "category/saveCategoryEntity";
-$route['get-category-entities'] = "category/getCategoryEntities";
+//$route['save-category-entity'] = "category/saveCategoryEntity";
+//$route['get-category-entities'] = "category/getCategoryEntities";
 
 //routes comments
 //getComments saveComment
-$route['get-comments/(:any)'] = "category/getComments";
-$route['save-comment'] = "category/saveComment";
+//$route['get-comments/(:any)'] = "category/getComments";
+//$route['save-comment'] = "category/saveComment";
 
 //routes for user categories
-$route['get-user-categories'] = 'category/getUserCategories';
-$route['add-user-categories'] = "category/addUserCategories";
+//$route['get-user-categories'] = 'category/getUserCategories';
+//$route['add-user-categories'] = "category/addUserCategories";
 
 //university
-$route['get-universities'] = "category/getUserUniversities";
+//$route['get-universities'] = "category/getUserUniversities";
 
 
 //for user
@@ -79,11 +79,11 @@ $route['register'] = 'passenger/register';
 //$route['update-password'] = 'user/updatePassword';
 //$route['authenticate'] = 'user/authenticate';
 =======
-$route['register'] = 'user/register';
+/*$route['register'] = 'user/register';
 $route['forget-password-verification-code'] = 'user/sendForgetPasswordVerificationCode';
 $route['update-password'] = 'user/updatePassword';
 $route['authenticate'] = 'user/authenticate';
->>>>>>> 3e396c62a3be2a4fb3130b2e11c3fccd99d6edf9
+>>>>>>> 3e396c62a3be2a4fb3130b2e11c3fccd99d6edf9*/
 
 
 $route['404_override'] = '';
